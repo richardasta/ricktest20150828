@@ -1,0 +1,13 @@
+{
+  "vars": {
+    "@font-family-sans-serif": "Helvetica, Arial, sans-serif",
+    "@screen-lg-min": "992px",
+    "@container-lg": "((940px + @grid-gutter-width))",
+    "@grid-gutter-width": "10px"
+  },
+  "css": [
+    "grid.less",
+    "forms.less"
+  ],
+  "js": []
+}

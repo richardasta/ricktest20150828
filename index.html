@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BuildClean Trial</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+		<link rel="stylesheet" type="text/css" href="css/bc.css">
+		<script src="js/modernizr.custom.10981.js"></script>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		<style>
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<a href="http://buildclean.com" target="_blank" class="no-underline" onClick="_gaq.push(['_trackEvent', 'Home', 'Visit', 'Visit Homepage']);">
+					<div id="logo">
+						&nbsp;
+					</div></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="divider"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul class="fader-single">
+						<li><img src="images/splashpage_1.jpg" width="940" height="423" class="img-responsive">
+						</li>
+						<li><img src="images/splashpage_3.jpg" width="940" height="423" class="img-responsive">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="divider"></div>
+				</div>
+			</div>
+			<div id="bc-panels">
+				<div class="row equalheight">
+					<div class="col-sm-6 bc-panel">
+						<div class="equalheight-inner" id="bc-email">
+							<div class="inner">
+								<div class="bc-section-label">
+									Email your contractor the free trial<sup>*</sup> offer!
+								</div>
+								<form id="email" action="php/email.php" method="post">
+									<fieldset>
+										<div>
+											<input name="em_cont_name" type="text" required id="em_cont_name" form="email" placeholder="Contractor's Name" title="Contractor's Name">
+										</div>
+										<div>
+											<input name="em_cont_email" type="email" required id="em_cont_email" form="email" placeholder="Contractor's Email" title="Contractor's Email">
+										</div>
+										<div>
+											<input name="em_your_name" type="text" required form="email" placeholder="Your Name" title="Your Name">
+										</div>
+										<div>
+											<input name="em_your_email" type="email" required form="email" placeholder="Your Email" title="Your Email">
+										</div>
+										<button class="button-send" type="submit" value="Submit" onClick="_gaq.push(['_trackEvent', 'Email', 'Send', 'Send Email']);">
+											SEND
+										</button>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 xs-only">
+						<div class="divider"></div>
+					</div>
+					<div class="col-sm-6 bc-panel">
+						<div class="equalheight-inner" id="bc-sms">
+							<div class="inner">
+								<div class="bc-section-label">
+									Text your contractor a link
+									to the free trial<sup>*</sup> offer!
+								</div>
+								<form id="sms" action="php/sms.php" method="post" enctype="multipart/form-data">
+									<fieldset>
+										<div>
+											<input name="sms_cont_name" type="text" required id="em_cont_name" form="sms" placeholder="Contractor's Name" title="Contractor's Name">
+										</div>
+										<div>
+											<input name="sms_cont_phone" type="text" required id="em_cont_phone" form="sms" placeholder="Contractor's Mobile Phone" title="Contractor's Mobile Phone">
+										</div>
+										<div>
+											<input name="sms_your_name" type="text" required form="sms" placeholder="Your Name" title="Your Name">
+										</div>
+										<div>
+											<input name="sms_your_email" type="text" required form="sms" placeholder="Your Phone" title="Your Phone">
+										</div>
+										<button class="button-send" type="submit" value="Submit" onClick="_gaq.push(['_trackEvent', 'SMS', 'Send', 'Send SMS']);">
+											SEND
+										</button>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="divider"></div>
+					</div>
+				</div>
+				<div class="row equalheight">
+					<div class="col-sm-6 bc-panel">
+						<div id="bc-download" class="equalheight-inner">
+							<div class="inner">
+								<div class="link-special">
+									<a href="BuildClean_Dust_Control.pdf" target="_blank" onClick="_gaq.push(['_trackEvent', 'Offer', 'Download', 'Download Offer']);"> Download the free trial<sup>*</sup> offer! </a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 xs-only">
+						<div class="divider"></div>
+					</div>
+					<div class="col-sm-6 bc-panel">
+						<div id="bc-learn" class="equalheight-inner">
+							<div class="inner">
+								<div class="link-special">
+									Learn more at <a href="http://buildclean.com" target="_blank" onClick="_gaq.push(['_trackEvent', 'Home', 'Visit', 'Visit Homepage']);">BuildClean.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 bc-footer">
+					<h3>BuildClean makes remodeling more livable.</h3>
+					<p>
+						<sup>*</sup>BuildClean offers a 7-day free trial to professional remodeling contractors that are first time BuildClean users.Trial use requires a signed loaner agreement.
+						<br>
+					</p>
+					<p>
+						<a href="http://itw.com" target="_blank">&copy;2013 Illinois Tools Works </a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script><script src="js/jquery.bxslider.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.fader-single').bxSlider({
+					'mode' : 'fade',
+					'pager' : false,
+					'controls' : false,
+					'auto' : true,
+					'pause' : 0000,
+					'speed' : 6000,
+					'infiniteLoop' : false
+				});
+				$('.no-placeholder [placeholder]').focus(function() {
+					var input = $(this);
+					if (input.val() == input.attr('placeholder')) {
+						input.val('');
+						input.removeClass('placeholder');
+					}
+				}).blur(function() {
+					var input = $(this);
+					if (input.val() == '' || input.val() == input.attr('placeholder')) {
+						input.addClass('placeholder');
+						input.val(input.attr('placeholder'));
+					}
+				}).blur();
+
+				$('.no-placeholder [placeholder]').parents('form').submit(function() {
+					$(this).find('[placeholder]').each(function() {
+						var input = $(this);
+						if (input.val() == input.attr('placeholder')) {
+							input.val('');
+						}
+					});
+				});
+			});
+		</script>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-46225921-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+	</body>
+</html>
